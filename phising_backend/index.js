@@ -15,7 +15,7 @@ app.use(cors({
     methods: "GET,POST,PUT,DELETE,OPTIONS",
     allowedHeaders: "Content-Type,Authorization"
 }));
-mongoose.connect("mongodb://localhost:27017/Phising_backend").then((result) => {
+mongoose.connect("mongodb+srv://mycluser.7ontl.mongodb.net/Phising_backend").then((result) => {
     console.log("result");
     
 }).catch((err) => {
@@ -37,6 +37,7 @@ app.get('*',(_,res)=>{
 })
 app.listen(PORT,()=>{
     console.log(PORT);
+    
     console.log("Your Port connecting successfully");
     
 })
