@@ -16,7 +16,7 @@ app.use(cors({
     allowedHeaders: "Content-Type,Authorization"
 }));
 
-mongoose.connect("mongodb+srv://hatersnothing:hatersnothing@mycluser.7ontl.mongodb.net/Phising_backend", {
+mongoose.connect("mongodb+srv://hatersnothing:harshid@aata@mycluser.7ontl.mongodb.net/Phising_backend", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
