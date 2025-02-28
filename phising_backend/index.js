@@ -16,7 +16,7 @@ app.use(cors({
     allowedHeaders: "Content-Type,Authorization"
 }));
 
-mongoose.connect("mongodb+srv://mycluser.7ontl.mongodb.net/Phising_backend").then((result) => {
+mongoose.connect("mongodb+srv://hatersnothing:hatersnothing@mycluser.7ontl.mongodb.net/Phising_backend").then((result) => {
     console.log("result");
     
 }).catch((err) => {
