@@ -15,6 +15,7 @@ app.use(cors({
     methods: "GET,POST,PUT,DELETE,OPTIONS",
     allowedHeaders: "Content-Type,Authorization"
 }));
+
 mongoose.connect("mongodb+srv://mycluser.7ontl.mongodb.net/Phising_backend").then((result) => {
     console.log("result");
     
@@ -33,7 +34,7 @@ app.post("/api/login",async(req,res)=>{
 })
 app.use(express.static(path.join(dirname,"/Phising_web/dist")));
 app.get('*',(_,res)=>{
-    res.sendFile(path.join(dirname,"frontend","dist","index.html"));
+    res.sendFile(path.join(dirname,"Phising_web","dist","index.html"));
 })
 app.listen(PORT,()=>{
     console.log(PORT);
