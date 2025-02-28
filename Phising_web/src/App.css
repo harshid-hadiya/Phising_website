@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.facebook-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.facebook-content {
+  
+ 
+  width: 100%;
+  max-width: 980px;
+  margin-top: 100px;
+}
+
+.facebook-left {
+  flex: 1;
+}
+
+.facebook-logo {
+  color: #1877f2;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.facebook-tagline {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.facebook-right {
+  width: 394px;
+  background-color: #fff;
+  padding: 38px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
+}
+
+.facebook-input {
+  width: 93.5%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.facebook-login-button {
+  width: 100%;
+  background-color: #1877f2;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.facebook-login-button:hover {
+  background-color: #166fe5;
+}
+
+.facebook-forgot-password {
+  display: block;
+  margin: 10px 0;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.facebook-divider {
+  margin: 15px 0;
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.facebook-create-account {
+  width: 100%;
+  background-color: #42b72a;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.facebook-create-account:hover {
+  background-color: #36a420;
+}
+
+.facebook-create-page {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.facebook-create-page a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.facebook-footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  height: 35vh;
+}
+
+.facebook-languages {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.facebook-footer-links {
+  font-size: 12px;
+  color: #666;
+}
+
+.facebook-footer-links a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.facebook-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.facebook-copyright {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.width{
+  width: 50%;
+  margin: auto;
+  margin-top: 7%;
+}
+.wraper{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}

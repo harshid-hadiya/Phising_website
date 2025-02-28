@@ -1,0 +1,21 @@
+{
+  "name": "phishing_backend",
+  "version": "1.0.0",
+  "description": "This project is for the Phishing Attack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon phising_backend/index.js",
+    "build": "npm install && npm install --prefix Phising_web && npm run build --prefix Phising_web",
+    "start": "nodemon phising_backend/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0",
+    "nodemon": "^3.1.9",
+    "react-router-dom": "^7.2.0"
+  }
+}
