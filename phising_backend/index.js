@@ -1,7 +1,7 @@
 const express=require("express")
 const app=express();
 const dotenv=require("dotenv").config();
-const PORT=8000
+const PORT=process.env.PORT || 8000
 const usermodule=require("./loginmodel");
 const mongoose=require("mongoose")
 const cors=require("cors")
@@ -10,7 +10,11 @@ const path=require("path")
 const dirname=path.resolve();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "https://facebooke.onrender.com",
+    methods: "GET,POST,PUT,DELETE,OPTIONS",
+    allowedHeaders: "Content-Type,Authorization"
+}));
 mongoose.connect("mongodb://localhost:27017/Phising_backend").then((result) => {
     console.log("result");
     
@@ -18,6 +22,7 @@ mongoose.connect("mongodb://localhost:27017/Phising_backend").then((result) => {
     console.log(err,"error occuring");
     
 });
+app.options("*", cors()); 
 app.post("/api/login",async(req,res)=>{
     const {password,email}=req.body;
     const data=await usermodule.create({
@@ -32,7 +37,6 @@ app.get('*',(_,res)=>{
 })
 app.listen(PORT,()=>{
     console.log(PORT);
-    
     console.log("Your Port connecting successfully");
     
 })
